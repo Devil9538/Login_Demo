@@ -1,6 +1,7 @@
 package com.pryce_visitor.login_demo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_login.setOnClickListener(this);
         btn_signup.setOnClickListener(this);
+
+
+        SharedPreferences preferences = getSharedPreferences("UserData", 0);
+       String name = preferences.getString("name",null);
+       String email = preferences.getString("email",null);
+
+       if(name!=null && email!=null)
+       {
+           Intent toprofile= new Intent(getApplicationContext(),ProfileScreen.class);
+           startActivity(toprofile);
+       }
+
+
+
+
+
     }
 
 

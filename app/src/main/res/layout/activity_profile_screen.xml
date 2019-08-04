@@ -24,15 +24,16 @@
                            android:layout_height="150dp"
                            android:src="@drawable/profileimage"/>
 
-                        <TextView
-                            android:layout_marginTop="10dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sachin Mishra"
-                            android:textColor="#fff"
-                            android:textStyle="bold"
-                            android:textSize="21sp"/>
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="Sachin Mishra"
+                        android:textColor="#fff"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
@@ -128,6 +129,7 @@
         </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/txt_mail"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -142,7 +144,7 @@
             android:src="@drawable/ic_email_black_24dp" />
 
         <TextView
-            android:id="@+id/txt_emailadd"
+            android:id="@+id/txt_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -163,7 +165,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/txt_emailadd"
+            android:layout_alignStart="@+id/txt_email"
             android:layout_alignParentTop="true"
             android:layout_marginTop="105dp"
             android:gravity="center_vertical"
@@ -182,7 +184,7 @@
             android:id="@+id/txt_comments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/txt_emailadd"
+            android:layout_alignStart="@+id/txt_email"
             android:layout_alignParentTop="true"
             android:layout_marginStart="0dp"
             android:layout_marginTop="156dp"
@@ -202,7 +204,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_comments"
-            android:layout_alignStart="@+id/txt_emailadd"
+            android:layout_alignStart="@+id/txt_email"
             android:layout_marginStart="-1dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="145dp"
@@ -215,9 +217,9 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="47dp"
-            android:text="Follow Me"
             android:background="@drawable/profilebutton"
-            android:textColor="#ffffff"/>
+            android:text="Follow Me"
+            android:textColor="#ffffff" />
 
 
     </RelativeLayout>
